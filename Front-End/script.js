@@ -19,3 +19,7 @@ const sideBar = document.getElementById('sidebar');
 menuBar.addEventListener('click', function() {
     sideBar.classList.toggle('hide');
 })
+
+if (window.innerWidth < 768){
+    sideBar.classList.add('hide');
+}
